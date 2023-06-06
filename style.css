@@ -1,0 +1,237 @@
+@font-face {
+    font-family: "TT Lakes";
+    font-style: normal;
+    font-weight: 200;
+    src: url("./Fonts/TTLakes-Medium.ttf")
+}
+  
+body {
+    font-family: "TT Lakes";
+    background: #F8F8F8;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    color: #1B1C21;
+}
+
+.header__main__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #FF3E79;
+}
+
+@media screen and (min-width: 320px) {
+
+    .header__main__name {
+        display: none;
+    }
+
+    .header__main {
+        display: flex;
+        width: 100%;
+        min-width: 320px;
+        height: 88px;
+        justify-content: space-evenly;
+        align-items: center;
+        background: #FFFFFF;
+    }
+
+    .header__main__for-tablet,
+    .header__main__text,
+    .header__main__contacts {
+        display: none;
+    }
+
+    .header__main__line {
+        height: 32px;
+        width: 2px;
+        background: #EAEAEA;
+    }
+
+    .header__main__services,
+    .header__main__service {
+        display: flex;
+        align-items: center;
+    }
+
+    .header__main__service {
+        margin: 0 8px;
+    }
+
+    .header__content {
+        margin-bottom: 6px;
+    }
+
+    .header__content__name {
+        height: 40px;
+        font-size: 28px;
+        font-weight: bold;
+        margin: 24px 16px 24px 0;
+        padding-left: 16px;
+        display: flex;
+        align-items: center;
+        border-width: 0 0 0 4px;
+        border-color: #41F6D7;
+        border-style: solid;
+    }
+
+    .header__content__menu {
+        display: flex;
+        overflow: scroll;
+        margin: 0 16px;
+    }
+
+    .header__content__menu__item {
+        background: none;
+        border: none;
+        white-space: nowrap;
+        color: #7E7E82;
+        height: 40px;
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+
+    .header__content__menu__item__active {
+        background: #FFFFFF;
+        border: 2px solid #B8FFEC;
+        border-radius: 6px;
+    }
+
+    .section__content__text {
+        height: 90px;
+        overflow: hidden;
+        margin: 0 16px;
+        font-size: 14px;
+    }
+
+    .section__content__text p {
+        margin: 24px 0;
+    }
+
+    .section__content__button {
+        background: none;
+        border: none;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        margin: 16px;
+        padding: 0;
+    }
+
+    .section__content__button__arrow {
+        margin-left: 8px;
+    }
+
+    .section__content__button__text {
+        margin-left: 16px;
+        font-size: 16px;
+    }
+
+    .section__img {
+        width: 100%;
+        background: url("./Images/logo.png") no-repeat;
+        height: 230px;
+        background-size: 100% 100%;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .header__main__for-tablet {
+        display: block;
+    }
+
+    .header__main__contacts {
+        display: flex;
+        justify-content: space-between;
+        width: 164px;
+        margin-left: 150px;
+    }
+
+    .section {
+        display: flex;
+    }
+
+    .section__content {
+        width: 50%;
+    }
+
+    .section__content__text {
+        height: 160px;
+    }
+
+    .section__img {
+        width: 50%;
+        margin: 24px;
+        border-radius: 5px;
+    }
+
+}
+
+@media screen and (min-width: 1120px) {
+
+    .header__main {
+        justify-content: space-between;
+        background: none;
+    }
+
+    .header__main__name {
+        display: block;
+        height: 40px;
+        font-size: 28px;
+        font-weight: 900;
+        margin: 24px 16px 24px 0;
+        padding-left: 16px;
+        display: flex;
+        align-items: center;
+        border-width: 0 0 0 4px;
+        border-color: #41F6D7;
+        border-style: solid;
+    }
+
+    .header__main__line,
+    .header__main__menu,
+    .header__main__for-tablet,
+    .header__main__contacts,
+    .header__main__cps,
+    .header__content__name {
+        display: none;
+    }
+
+    .header__main__service {
+        margin: 0 16px;
+        width: 173px;
+        justify-content: space-between;
+    }
+
+    .header__main__text {
+        display: block;
+        font-size: 16px;
+    }
+
+    .header__content__menu {
+        overflow: inherit;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .section__content__text {
+        height: fit-content;
+    }
+
+    .section__content__button__text {
+        margin-left: 16px;
+        font-size: 16px;
+    }
+
+    .section__img {
+        width: 50%;
+    }
+
+}
