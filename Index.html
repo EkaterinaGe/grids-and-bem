@@ -5,70 +5,119 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./menu.css">
     <title>Услуги и сервисы</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header__main">
-            <p class="header__main__name">Услуги и сервисы</p>
-            <button class="header__main__button header__main__menu">
-                <img class="header__main__menu__img" src="./Images/menu.svg" alt="menu">
+    <div class="menu-mobile">
+        <div class="top">
+            <button class="header__button button__close">
+                <img class="header__img close__img" src="./Images/close.svg" alt="close">
             </button>
-            <div class="header__main__line header__main__for-tablet"></div>
-            <div class="header__main__cps">
-                <img class="header__main__logo__img" src="./Images/logo.svg" alt="CPS">
+            <div class="header__cps">
+                <img class="header__img" src="./Images/logo.svg" alt="CPS">
             </div>
-            <div class="header__main__contacts">
-                <button class="header__main__button header__main__tel">
-                    <img class="header__main__tel__img" src="./Images/phone.svg" alt="phone">
-                </button>
-                <button class="header__main__button header__main__email">
-                    <img class="header__main__email__img" src="./Images/email.svg" alt="email">
-                </button>
-                <button class="header__main__button header__main__cabinet">
-                    <img class="header__main__cabinet__img" src="./Images/cabinet.svg" alt="cabinet"> 
-                </button>
-            </div>
-            <div class="header__main__line"></div>
-            <div class="header__main__services">
-                <div class="header__main__service">
-                    <p class="header__main__text">Оставить заявку</p>
-                    <button class="header__main__button header__main__application">
-                        <img class="header__main__logo" src="./Images/service.svg" alt="Оставить заявку">
-                    </button>
-                </div>
-                <div class="header__main__service">
-                    <p class="header__main__text">Статус ремонта</p>
-                    <button class="header__main__button header__main__status">
-                        <img class="header__main__logo" src="./Images/status.svg" alt="Статус ремонта">
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="header__content">
-            <p class="header__content__name">Услуги и сервисы</p>
-            <div class="header__content__menu">
-                <button class="header__content__menu__item header__content__menu__item__active">Ремонтируемые бренды</button>
-                <button class="header__content__menu__item">Ремонтируемые устройства</button>
-                <button class="header__content__menu__item">Цены на услуги</button>
-                <button class="header__content__menu__item">Адреса сервисных центров</button>
-                <button class="header__content__menu__item">Специальные цены</button>
-                <button class="header__content__menu__item">Отзывы</button>
-            </div>
-        </div>
-    </header>
-    <section class="section">
-        <div class="section__content">
-            <div class="section__content__text">
-                <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
-            </div>
-            <button class="section__content__button">
-                <img class="section__content__button__arrow" src="./Images/arrow.svg" alt="Стрелка">
-                <p class="section__content__button__text">Читать далее</p>
+            <button class="header__button button__search">
+                <img class="header__img" src="./Images/search.svg" alt="search">
             </button>
         </div>
-        <div class="section__img"></div>
-    </section>
+        <ul>
+            <li class="menu-mobile__item item_select">Ремонт техники</li>
+            <li class="menu-mobile__item">Услуги и сервисы</li>
+            <li class="menu-mobile__item">Корпоративным клиентам</li>
+            <li class="menu-mobile__item">Продавцам техники</li>
+            <li class="menu-mobile__item">Партнерам</li>
+            <li class="menu-mobile__item">Производителям</li>
+            <li class="menu-mobile__item">Наши сервисные центры</li>
+            <li class="menu-mobile__item">Контакты</li>
+        </ul>
+        <div class="bottom">
+            <div class="contacts">
+                <button class="header__button button__tel">
+                    <img class="header__img" src="./Images/phone.svg" alt="phone">
+                </button>
+                <button class="header__button button__email">
+                    <img class="header__img" src="./Images/email.svg" alt="email">
+                </button>
+                <button class="header__button button__cabinet">
+                    <img class="header__img" src="./Images/cabinet.svg" alt="cabinet"> 
+                </button>
+            </div>
+            <p class="email">mail@cps.com</p>
+            <p class="phone">8 800 890 8900</p>
+            <div class="language">
+                <button class="language__item ru">RU</button>
+                <button class="language__item en">EN</button>
+                <button class="language__item ch">CH</button>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <header class="header">
+            <div class="main">
+                <h1 class="title">Услуги и сервисы</h1>
+                <button class="header__button button__menu">
+                    <img class="header__img menu__img" src="./Images/menu.svg" alt="menu">
+                </button>
+                <div class="header__line header__for-tablet"></div>
+                <div class="header__cps">
+                    <img class="header__img" src="./Images/logo.svg" alt="CPS">
+                </div>
+                <div class="header__contacts">
+                    <button class="header__button button__tel">
+                        <img class="header__img" src="./Images/phone.svg" alt="phone">
+                    </button>
+                    <button class="header__button button__email">
+                        <img class="header__img" src="./Images/email.svg" alt="email">
+                    </button>
+                    <button class="header__button button__cabinet">
+                        <img class="header__img" src="./Images/cabinet.svg" alt="cabinet"> 
+                    </button>
+                </div>
+                <div class="header__line"></div>
+                <div class="header__services">
+                    <div class="header__service">
+                        <p class="header__text">Оставить заявку</p>
+                        <button class="header__button button__application">
+                            <img class="header__img" src="./Images/service.svg" alt="Оставить заявку">
+                        </button>
+                    </div>
+                    <div class="header__service">
+                        <p class="header__text">Статус ремонта</p>
+                        <button class="header__button button__status">
+                            <img class="header__img" src="./Images/status.svg" alt="Статус ремонта">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu">
+                <p class="title">Услуги и сервисы</p>
+                <div>
+                    <button class="menu__item item_active">Ремонтируемые бренды</button>
+                    <button class="menu__item">Ремонтируемые устройства</button>
+                    <button class="menu__item">Цены на услуги</button>
+                    <button class="menu__item">Адреса сервисных центров</button>
+                    <button class="menu__item">Специальные цены</button>
+                    <button class="menu__item">Отзывы</button>
+                </div>
+            </div>
+        </header>
+        <section class="info">
+            <div class="info__text">
+                <div>
+                    <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                    <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+                </div>
+                <button class="info__expand">
+                    <img class="expand__arrow" src="./Images/arrow.svg" alt="Стрелка">
+                    <p class="expand__text">Читать далее</p>
+                </button>
+            </div>
+            <img class="info__img" src="./Images/logo.png" alt="CPS">
+        </section>
+    </div>
+
+    <script src="script.js">
+    </script>
 </body>
 </html>
