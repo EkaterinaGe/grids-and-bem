@@ -15,19 +15,18 @@
 body {
     font-family: "TT Lakes";
     background: #F8F8F8;
-    width: 100%;
     padding: 0;
     margin: 0;
     color: #1B1C21;
 }
 
-.header__button {
+.button__icon {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 40px;
     height: 40px;
-    border-radius: 20px;
+    border-radius: 50%;
     border: none;
     background-color: #FF3E79;
 }
@@ -39,7 +38,7 @@ body {
 @media screen and (min-width: 320px) {
 
     .main .title,
-    .header__for-tablet,
+    .main div:nth-child(3),
     .header__text,
     .header__contacts {
         display: none;
@@ -47,7 +46,6 @@ body {
 
     .main {
         display: flex;
-        width: 100%;
         min-width: 320px;
         height: 88px;
         justify-content: space-evenly;
@@ -101,12 +99,12 @@ body {
     .menu__item {
         font-family: "TT Lakes";
         background: none;
-        border: none;
         white-space: nowrap;
         color: #7E7E82;
         height: 40px;
         padding: 8px 16px;
         font-size: 16px;
+        border: 2px solid #F8F8F8;
     }
 
     .item_active {
@@ -115,17 +113,14 @@ body {
         border-radius: 6px;
     }
 
-    .info__text div {
-        height: 90px;
-        overflow: hidden;
-        margin: 0 16px;
+    .info__text p {
+        margin: 24px 16px;
         font-size: 14px;
         font-family: "TT Lakes";
     }
 
-    .info__text div p {
-        margin: 24px 0;
-        font-family: "TT Lakes";
+    .info__text p:nth-child(2) {
+        display: none;
     }
 
     .info__expand {
@@ -152,7 +147,7 @@ body {
 
 @media screen and (min-width: 768px) {
 
-    .header__for-tablet {
+    .main div:nth-child(3) {
         display: block;
     }
 
@@ -169,12 +164,13 @@ body {
 
     .info__text {
         width: 50%;
-        font-family: "TT Lakes";
     }
 
-    .info__text div {
-        height: 160px;
-        font-family: "TT Lakes";
+    .info__text p:nth-child(2) {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
     }
 
     .info__img {
@@ -209,7 +205,8 @@ body {
     }
 
     .header__line,
-    .button__menu,
+    .main div:nth-child(3),
+    #menu-open,
     .header__contacts,
     .header__cps,
     .menu .title {
@@ -234,22 +231,8 @@ body {
         width: 100%;
     }
 
-    .info__text div {
-        height: fit-content;
-        font-family: "TT Lakes";
-    }
-
-    .info__text div p {
-        margin-bottom: 0;
-    }
-
-    .info__expand {
-        margin-left: 16px;
-        font-size: 16px;
-    }
-
-    .info__img {
-        width: 50%;
+    .info__text p:nth-child(2) {
+        display: block;
     }
 
 }

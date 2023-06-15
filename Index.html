@@ -10,19 +10,19 @@
 </head>
 <body>
     <div class="menu-mobile">
-        <div class="top">
-            <button class="header__button button__close">
-                <img class="header__img close__img" src="./Images/close.svg" alt="close">
+        <div class="menu-mobile__header">
+            <button id="menu-close" class="button__icon">
+                <img id="menu_img-close" class="header__img" src="./Images/close.svg" alt="close">
             </button>
             <div class="header__cps">
                 <img class="header__img" src="./Images/logo.svg" alt="CPS">
             </div>
-            <button class="header__button button__search">
+            <button class="button__icon">
                 <img class="header__img" src="./Images/search.svg" alt="search">
             </button>
         </div>
         <ul>
-            <li class="menu-mobile__item item_select">Ремонт техники</li>
+            <li class="menu-mobile__item item-active">Ремонт техники</li>
             <li class="menu-mobile__item">Услуги и сервисы</li>
             <li class="menu-mobile__item">Корпоративным клиентам</li>
             <li class="menu-mobile__item">Продавцам техники</li>
@@ -31,20 +31,22 @@
             <li class="menu-mobile__item">Наши сервисные центры</li>
             <li class="menu-mobile__item">Контакты</li>
         </ul>
-        <div class="bottom">
+        <div class="menu-mobile__footer">
             <div class="contacts">
-                <button class="header__button button__tel">
-                    <img class="header__img" src="./Images/phone.svg" alt="phone">
-                </button>
-                <button class="header__button button__email">
-                    <img class="header__img" src="./Images/email.svg" alt="email">
-                </button>
-                <button class="header__button button__cabinet">
-                    <img class="header__img" src="./Images/cabinet.svg" alt="cabinet"> 
-                </button>
+                <div>
+                    <button class="button__icon">
+                        <img class="header__img" src="./Images/phone.svg" alt="phone">
+                    </button>
+                    <button class="button__icon">
+                        <img class="header__img" src="./Images/email.svg" alt="email">
+                    </button>
+                    <button class="button__icon">
+                        <img class="header__img" src="./Images/cabinet.svg" alt="cabinet"> 
+                    </button>
+                </div>
+                <p class="contacts__email">mail@cps.com</p>
+                <p class="contacts__phone">8 800 890 8900</p>
             </div>
-            <p class="email">mail@cps.com</p>
-            <p class="phone">8 800 890 8900</p>
             <div class="language">
                 <button class="language__item ru">RU</button>
                 <button class="language__item en">EN</button>
@@ -56,21 +58,21 @@
         <header class="header">
             <div class="main">
                 <h1 class="title">Услуги и сервисы</h1>
-                <button class="header__button button__menu">
-                    <img class="header__img menu__img" src="./Images/menu.svg" alt="menu">
+                <button id="menu-open" class="button__icon">
+                    <img id="menu_img-open" class="header__img" src="./Images/menu.svg" alt="menu">
                 </button>
                 <div class="header__line header__for-tablet"></div>
                 <div class="header__cps">
                     <img class="header__img" src="./Images/logo.svg" alt="CPS">
                 </div>
                 <div class="header__contacts">
-                    <button class="header__button button__tel">
+                    <button class="button__icon">
                         <img class="header__img" src="./Images/phone.svg" alt="phone">
                     </button>
-                    <button class="header__button button__email">
+                    <button class="button__icon">
                         <img class="header__img" src="./Images/email.svg" alt="email">
                     </button>
-                    <button class="header__button button__cabinet">
+                    <button class="button__icon">
                         <img class="header__img" src="./Images/cabinet.svg" alt="cabinet"> 
                     </button>
                 </div>
@@ -78,13 +80,13 @@
                 <div class="header__services">
                     <div class="header__service">
                         <p class="header__text">Оставить заявку</p>
-                        <button class="header__button button__application">
+                        <button class="button__icon">
                             <img class="header__img" src="./Images/service.svg" alt="Оставить заявку">
                         </button>
                     </div>
                     <div class="header__service">
                         <p class="header__text">Статус ремонта</p>
-                        <button class="header__button button__status">
+                        <button class="button__icon">
                             <img class="header__img" src="./Images/status.svg" alt="Статус ремонта">
                         </button>
                     </div>
@@ -104,13 +106,11 @@
         </header>
         <section class="info">
             <div class="info__text">
-                <div>
-                    <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                    <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
-                </div>
+                <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
                 <button class="info__expand">
                     <img class="expand__arrow" src="./Images/arrow.svg" alt="Стрелка">
-                    <p class="expand__text">Читать далее</p>
+                    <span class="expand__text">Читать далее</span>
                 </button>
             </div>
             <img class="info__img" src="./Images/logo.png" alt="CPS">

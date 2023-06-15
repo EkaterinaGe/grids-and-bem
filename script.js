@@ -7,12 +7,12 @@ document.addEventListener('click', function(el) {
         el.target.classList.add('item_active');
     }
 
-    if ( el.target.classList.contains('button__menu') || el.target.classList.contains('menu__img') ) {
+    if ( el.target.id == 'menu-open' || el.target.id == 'menu_img-open' ) {
         let menuMobile = document.querySelector('.menu-mobile');
         menuMobile.classList.add('menu-active');
     }
 
-    if ( el.target.classList.contains('button__close') || el.target.classList.contains('close__img') ) {
+    if ( el.target.id == 'menu-close' || el.target.id == 'menu_img-close' ) {
         let menuMobile = document.querySelector('.menu-mobile');
         menuMobile.classList.remove('menu-active');
     }

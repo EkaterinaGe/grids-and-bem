@@ -25,17 +25,17 @@
     box-shadow: 16px 0 52px #0E185033;
 }
 
-.top {
+.menu-mobile__header {
     height: 78px;
     display: flex;
     padding: 19px 24px;
 }
 
-.button__close {
+.menu-mobile__header button:nth-child(1) {
     margin: 6px 17px 0 0;
 }
 
-.button__search {
+.menu-mobile__header button:nth-child(3) {
     margin: 6px 0 0 78px;
 }
 
@@ -55,32 +55,32 @@ li {
     font-family: "TT Lakes";
 }
 
-.item_select {
+.item-active {
     border-width: 0 0 0 4px;
     border-color: #41F6D7;
     border-style: solid;
     color: #7E7E82;
 }
 
-.bottom {
+.menu-mobile__footer {
     margin: 240px 24px 32px 24px;
 }
 
-.contacts {
+.contacts div {
     display: flex;
 }
 
-.contacts .header__button {
+.contacts .button__icon {
     margin-right: 16px;
 }
 
-.email {
+.contacts__email {
     margin: 16px 0 12px 0;
     font-size: 16px;
     font-family: "TT Lakes";
 }
 
-.phone {
+.contacts__phone {
     margin: 0;
     font-size: 24px;
     font-family: "TT Lakes-bold";
