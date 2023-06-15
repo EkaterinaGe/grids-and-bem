@@ -20,9 +20,11 @@
     display: block;
     position: absolute;
     width: 320px;
+    height: 100vh;
     z-index: 2;
     background: #FFFFFF;
     box-shadow: 16px 0 52px #0E185033;
+    overflow: scroll;
 }
 
 .menu-mobile__header {
