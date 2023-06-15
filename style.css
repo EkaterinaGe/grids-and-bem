@@ -48,7 +48,7 @@ body {
         display: flex;
         min-width: 320px;
         height: 88px;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
         background: #FFFFFF;
         border-width: 0 0 1px 0;
@@ -56,10 +56,19 @@ body {
         border-style: solid;
     }
 
+    #menu-open {
+        margin: 0 16px;
+    }
+
     .header__line {
         height: 32px;
         width: 2px;
         background: #EAEAEA;
+        margin: 0 12px 0 16px;
+    }
+
+    .header__cps .header__img {
+        width: 96px;
     }
 
     .header__services,
@@ -70,6 +79,10 @@ body {
 
     .header__service {
         margin: 0 8px;
+    }
+
+    .header__service:nth-child(2) {
+        margin: 0 16px 0 8px;
     }
 
     .menu {
@@ -114,7 +127,7 @@ body {
     }
 
     .info__text p {
-        margin: 24px 16px;
+        margin: 24px 16px 16px 16px;
         font-size: 14px;
         font-family: "TT Lakes";
     }
@@ -129,7 +142,7 @@ body {
         height: 24px;
         display: flex;
         align-items: center;
-        margin: 16px;
+        margin: 0 16px 16px 16px;
         padding: 0;
     }
 
@@ -147,15 +160,37 @@ body {
 
 @media screen and (min-width: 768px) {
 
+    #menu-open {
+        margin: 0 20px 0 24px;
+    }
+    
     .main div:nth-child(3) {
         display: block;
+        margin: 0;
+    }
+
+    .header__cps {
+        margin: 0 250px 0 20px;
     }
 
     .header__contacts {
         display: flex;
-        justify-content: space-between;
-        width: 164px;
-        margin: 0 8px 0 210px;
+    }
+
+    .header__contacts .button__icon {
+        margin-right: 16px;
+    }
+
+    .main div:nth-child(6) {
+        margin: 0 20px 0 4px;
+    }
+
+    .header__services div:nth-child(1) {
+        margin: 0 16px 0 0;
+    }
+
+    .header__services div:nth-child(2) {
+        margin: 0 24px 0 0;
     }
 
     .info {
@@ -214,8 +249,6 @@ body {
     }
 
     .header__service {
-        margin: 0 16px;
-        width: 173px;
         justify-content: space-between;
     }
 
@@ -223,6 +256,7 @@ body {
         display: block;
         font-size: 16px;
         font-family: "TT Lakes"; 
+        margin-right: 8px;
     }
 
     .menu div {
