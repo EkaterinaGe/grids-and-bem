@@ -11,6 +11,13 @@
     font-weight: 600;
     src: url("./Fonts/TTLakes-Bold.ttf")
 }
+
+@font-face {
+    font-family: "TT Lakes-light";
+    font-style: bold;
+    font-weight: 600;
+    src: url("./Fonts/TTLakes-Light.ttf")
+}
   
 body {
     font-family: "TT Lakes";
@@ -161,6 +168,64 @@ body {
         width: 100%;
     }
 
+    .subtitle {
+        font-size: 16px;
+        font-family: "TT Lakes-light";
+        color: #7E7E82;
+        border-width: 1px 0 0 0;
+        border-color: #41F6D7;
+        border-style: solid;
+        padding: 16px;
+        margin: 0;
+        background: linear-gradient(0.25turn, #F8F8F8, #FFFFFF);
+    }
+
+    .swiper {
+        height: 116px; 
+    }
+
+    .swiper-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .swiper-slide {
+        display: flex; 
+        align-items: center;
+        justify-content: space-between;
+        width: 224px; 
+        height: 72px; 
+        background: #FFFFFF;
+        border: 1px solid #EAEAEA;
+        border-radius: 5px;
+        margin: 8px 12px;
+        padding: 0 12px;
+    }
+
+    .swiper__hidden {
+        display: flex;
+    }
+
+    .swiper__arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        border: 2px solid #FF3E79;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets, 
+    .swiper-pagination-bullets.swiper-pagination-horizontal, 
+    .swiper-pagination-custom, 
+    .swiper-pagination-fraction {
+        top: var(--swiper-pagination-top,100px);
+    }
+
+    .swiper__expand {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -219,6 +284,34 @@ body {
         border-radius: 5px;
     }
 
+    .swiper {
+        height: fit-content !important;
+    }
+
+    .swiper-wrapper {
+        flex-wrap: wrap;
+        padding: 12px; 
+    }
+
+    .swiper__hidden {
+        display: none;
+    }
+
+    .swiper__expand {
+        border: none;
+        background: none;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 8px 16px;
+    }
+
+    .swiper__expand__text {
+        font-size: 16px;
+        margin-left: 4px;
+        font-family: "TT Lakes-light";
+    }
+
 }
 
 @media screen and (min-width: 1120px) {
@@ -271,6 +364,14 @@ body {
 
     .info__text p:nth-child(2) {
         display: block;
+    }
+
+    .swiper-wrapper :nth-child(4n+4) {
+        display: flex;
+    }
+
+    .swiper-slide {
+        width: 240px;
     }
 
 }
