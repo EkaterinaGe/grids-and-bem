@@ -12,10 +12,6 @@
     src: url("./Fonts/TTLakes-Bold.ttf")
 }
 
-.menu-mobile {
-    display: none;
-}
-
 .menu-active {
     display: block;
     position: absolute;
