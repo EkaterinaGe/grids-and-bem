@@ -42,6 +42,20 @@ body {
     z-index: 1;
 }
 
+.back {
+    display: none;
+}
+
+.back__active {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: #FFFFFF;
+    opacity: 0.95;
+}
+
 @media screen and (min-width: 320px) {
 
     .main .title,

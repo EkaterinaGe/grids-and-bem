@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./menu.css">
+    <link rel="stylesheet" href="./feedback.css">
     <title>Услуги и сервисы</title>
 </head>
 <body>
@@ -38,8 +39,8 @@
                     <button class="button__icon">
                         <img class="menu-mobile__img" src="./Images/phone.svg" alt="phone">
                     </button>
-                    <button class="button__icon">
-                        <img class="menu-mobile__img" src="./Images/email.svg" alt="email">
+                    <button class="button__icon feedback-open">
+                        <img class="menu-mobile__img feedback-open" src="./Images/email.svg" alt="email">
                     </button>
                     <button class="button__icon">
                         <img class="menu-mobile__img" src="./Images/cabinet.svg" alt="cabinet"> 
@@ -55,6 +56,8 @@
             </div>
         </div>
     </div>
+
+    <div class="back"></div>
 
     <div class="content">
         <header class="header">
@@ -74,8 +77,8 @@
                         <button class="button__icon">
                             <img class="header__img" src="./Images/phone.svg" alt="phone">
                         </button>
-                        <button class="button__icon">
-                            <img class="header__img" src="./Images/email.svg" alt="email">
+                        <button class="button__icon feedback-open">
+                            <img class="header__img feedback-open" src="./Images/email.svg" alt="email">
                         </button>
                         <button class="button__icon">
                             <img class="header__img" src="./Images/cabinet.svg" alt="cabinet"> 
@@ -373,6 +376,28 @@
             <p>Политика конфиденциальности</p>
             <p>Информация, размещенная на данной странице, не является публичной офертой</p>
         </footer>
+    </div>
+
+    <div class="feedback">
+        <button id="feedback-close" class="button__icon">
+            <img id="feedback_img-close" class="feedback__img" src="./Images/close.svg" alt="close">
+        </button>
+        <p class="feedback__content__name">Обратная связь</p>
+        <div class="feedback__content">
+            <input type="text" class="feedback__content__input" placeholder="Имя">
+            <input type="number" class="feedback__content__input" placeholder="Телефон">
+            <input type="email" class="feedback__content__input" placeholder="Электронная почта">
+            <textarea class="feedback__content__textarea" placeholder="Сообщение"></textarea>
+        </div>
+        <div class="feedback__footer">
+            <div class="feedback__footer__text">
+                Нажимая “отправить”, вы даете согласие на <a>обработку персональных данных</a> и соглашаетесь с нашей <a>политикой конфиденциальности</a>
+            </div>
+            <button class="feedback__footer__button">
+                <p>Отправить</p>
+                <img src="./Images/arrow_white_right.svg" alt="Стрелка">
+            </button>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>

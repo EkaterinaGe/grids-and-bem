@@ -11,11 +11,29 @@ document.addEventListener('click', function(el) {
     if ( el.target.id == 'menu-open' || el.target.id == 'menu_img-open' ) {
         let menuMobile = document.querySelector('.menu-mobile');
         menuMobile.classList.add('menu-active');
+        let back = document.querySelector('.back');
+        back.classList.add('back__active');
     }
 
     if ( el.target.id == 'menu-close' || el.target.id == 'menu_img-close' ) {
         let menuMobile = document.querySelector('.menu-mobile');
         menuMobile.classList.remove('menu-active');
+        let back = document.querySelector('.back');
+        back.classList.remove('back__active');
+    }
+
+    if ( el.target.classList.contains('feedback-open') ) { 
+        let feedback = document.querySelector('.feedback');
+        feedback.classList.add('feedback__active');
+        let back = document.querySelector('.back');
+        back.classList.add('back__active');
+    }
+
+    if ( el.target.id == 'feedback-close' || el.target.id == 'feedback_img-close' ) {
+        let menuMobile = document.querySelector('.feedback');
+        menuMobile.classList.remove('feedback__active');
+        let back = document.querySelector('.back');
+        back.classList.remove('back__active');
     }
 
     if ( el.target.classList.contains('equipment-types__swiper__expand') 
@@ -97,6 +115,7 @@ addEventListener('resize', function() {
             keyboard: true,
             pagination: {
               el: '.swiper-pagination',
+              clickable: true,
             },
         });
         swiper2 = new Swiper('.swiper2', {
