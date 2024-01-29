@@ -25,6 +25,7 @@ body {
     padding: 0;
     margin: 0;
     color: #1B1C21;
+    overflow-x: hidden;
 }
 
 .button__icon {
@@ -251,6 +252,10 @@ body {
         display: none;
     }
 
+    .swiper__decktop {
+        display: none;
+    }
+
     .order__service {
         height: 32px;
         width: 119px;
@@ -397,6 +402,11 @@ body {
 
     .swiper {
         height: fit-content !important;
+        display: none;
+    }
+
+    .swiper__decktop {
+        display: block;
     }
 
     .swiper-wrapper {
@@ -529,6 +539,15 @@ body {
 }
 
 @media screen and (min-width: 1440px) {
+
+    body {
+        display: flex;
+        justify-content: center;
+    }
+
+    .all {
+        width: 1440px;
+    }
 
     .menu-mobile {
         display: block;

@@ -8,395 +8,517 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./menu.css">
     <link rel="stylesheet" href="./feedback.css">
+    <link rel="stylesheet" href="./call.css">
     <title>Услуги и сервисы</title>
 </head>
 <body>
-    <div class="menu-mobile">
-        <div class="menu-mobile__header">
-            <button id="menu-close" class="button__icon">
-                <img id="menu_img-close" class="menu-mobile__img" src="./Images/close.svg" alt="close">
-            </button>
-            <div class="menu-mobile__cps">
-                <img class="menu-mobile__img" src="./Images/logo.svg" alt="CPS">
-            </div>
-            <button class="button__icon">
-                <img class="menu-mobile__img" src="./Images/search.svg" alt="search">
-            </button>
-        </div>
-        <ul>
-            <li class="menu-mobile__item item-active">Ремонт техники</li>
-            <li class="menu-mobile__item">Услуги и сервисы</li>
-            <li class="menu-mobile__item">Корпоративным клиентам</li>
-            <li class="menu-mobile__item">Продавцам техники</li>
-            <li class="menu-mobile__item">Партнерам</li>
-            <li class="menu-mobile__item">Производителям</li>
-            <li class="menu-mobile__item">Наши сервисные центры</li>
-            <li class="menu-mobile__item">Контакты</li>
-        </ul>
-        <div class="menu-mobile__footer">
-            <div class="contacts">
-                <div>
-                    <button class="button__icon">
-                        <img class="menu-mobile__img" src="./Images/phone.svg" alt="phone">
-                    </button>
-                    <button class="button__icon feedback-open">
-                        <img class="menu-mobile__img feedback-open" src="./Images/email.svg" alt="email">
-                    </button>
-                    <button class="button__icon">
-                        <img class="menu-mobile__img" src="./Images/cabinet.svg" alt="cabinet"> 
-                    </button>
+    <div class="all">
+        <div class="menu-mobile">
+            <div class="menu-mobile__header">
+                <button id="menu-close" class="button__icon">
+                    <img id="menu_img-close" class="menu-mobile__img" src="./Images/close.svg" alt="close">
+                </button>
+                <div class="menu-mobile__cps">
+                    <img class="menu-mobile__img" src="./Images/logo.svg" alt="CPS">
                 </div>
-                <p class="contacts__email">mail@cps.com</p>
-                <p class="contacts__phone">8 800 890 8900</p>
+                <button class="button__icon">
+                    <img class="menu-mobile__img" src="./Images/search.svg" alt="search">
+                </button>
             </div>
-            <div class="language">
-                <button class="language__item ru">RU</button>
-                <button class="language__item en">EN</button>
-                <button class="language__item ch">CH</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="back"></div>
-
-    <div class="content">
-        <header class="header">
-            <div class="main">
-                <div>
-                    <h1 class="title">Услуги и сервисы</h1>
-                    <button id="menu-open" class="button__icon">
-                        <img id="menu_img-open" class="header__img" src="./Images/menu.svg" alt="menu">
-                    </button>
-                    <div class="header__line"></div>
-                    <div class="header__cps">
-                        <img class="header__img" src="./Images/logo.svg" alt="CPS">
-                    </div>
-                </div>
-                <div>
-                    <div class="header__contacts">
-                        <button class="button__icon">
-                            <img class="header__img" src="./Images/phone.svg" alt="phone">
+            <ul>
+                <li class="menu-mobile__item item-active">Ремонт техники</li>
+                <li class="menu-mobile__item">Услуги и сервисы</li>
+                <li class="menu-mobile__item">Корпоративным клиентам</li>
+                <li class="menu-mobile__item">Продавцам техники</li>
+                <li class="menu-mobile__item">Партнерам</li>
+                <li class="menu-mobile__item">Производителям</li>
+                <li class="menu-mobile__item">Наши сервисные центры</li>
+                <li class="menu-mobile__item">Контакты</li>
+            </ul>
+            <div class="menu-mobile__footer">
+                <div class="contacts">
+                    <div>
+                        <button class="button__icon call-open">
+                            <img class="menu-mobile__img call-open" src="./Images/phone.svg" alt="phone">
                         </button>
                         <button class="button__icon feedback-open">
-                            <img class="header__img feedback-open" src="./Images/email.svg" alt="email">
+                            <img class="menu-mobile__img feedback-open" src="./Images/email.svg" alt="email">
                         </button>
                         <button class="button__icon">
-                            <img class="header__img" src="./Images/cabinet.svg" alt="cabinet"> 
+                            <img class="menu-mobile__img" src="./Images/cabinet.svg" alt="cabinet"> 
                         </button>
                     </div>
-                    <div class="header__line"></div>
-                    <div class="header__services">
-                        <div class="header__service">
-                            <p class="header__text">Оставить заявку</p>
-                            <button class="button__icon">
-                                <img class="header__img" src="./Images/service.svg" alt="Оставить заявку">
-                            </button>
-                        </div>
-                        <div class="header__service">
-                            <p class="header__text">Статус ремонта</p>
-                            <button class="button__icon">
-                                <img class="header__img" src="./Images/status.svg" alt="Статус ремонта">
-                            </button>
-                        </div>
-                    </div>
+                    <p class="contacts__email">mail@cps.com</p>
+                    <p class="contacts__phone">8 800 890 8900</p>
+                </div>
+                <div class="language">
+                    <button class="language__item ru">RU</button>
+                    <button class="language__item en">EN</button>
+                    <button class="language__item ch">CH</button>
                 </div>
             </div>
-            <div class="menu">
-                <p class="title">Услуги и сервисы</p>
-                <div>
-                    <button class="menu__item item_active">Ремонтируемые бренды</button>
-                    <button class="menu__item">Ремонтируемые устройства</button>
-                    <button class="menu__item">Цены на услуги</button>
-                    <button class="menu__item">Адреса сервисных центров</button>
-                    <button class="menu__item">Специальные цены</button>
-                    <button class="menu__item">Отзывы</button>
-                </div>
-            </div>
-        </header>
-
-        <section class="info">
-            <div class="info__text">
-                <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
-                <button class="info__expand">
-                    <img class="expand__arrow" src="./Images/arrow.svg" alt="Стрелка">
-                    <span class="expand__text">Читать далее</span>
-                </button>
-            </div>
-            <img class="info__img" src="./Images/logo.png" alt="CPS">
-        </section>
-
-        <section class="equipment-types">
-            <h2 class="subtitle">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h2>
-            <div class="swiper swiper1">
-                <div class="swiper-wrapper equipment-types__swiper-wrapper">
-                    <button class="swiper-slide">
-                        <img class="swiper__img" src="./Images/lenovo.svg" alt="Lenovo">
-                        <div class="swiper__arrow">
-                            <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
-                        </div>
-                    </button>
-                    <button class="swiper-slide">
-                        <img class="swiper__img" src="./Images/samsung.svg" alt="Samsung">
-                        <div class="swiper__arrow">
-                            <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
-                        </div>
-                    </button>
-                    <button class="swiper-slide">
-                        <img class="swiper__img" src="./Images/apple.svg" alt="Apple">
-                        <div class="swiper__arrow">
-                            <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
-                        </div>
-                    </button>
-                    <button class="swiper-slide swiper__hidden equipment-types__swiper__hidden">
-                        <img class="swiper__img" src="./Images/viewsonic.svg" alt="ViewSonic">
-                        <div class="swiper__arrow">
-                            <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
-                        </div>
-                    </button>
-                    <button class="swiper-slide">
-                        <img class="swiper__img" src="./Images/bosch.svg" alt="Bosch">
-                        <div class="swiper__arrow">
-                            <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
-                        </div>
-                    </button>
-                    <button class="swiper-slide">
-                        <img class="swiper__img" src="./Images/hp.svg" alt="HP">
-                        <div class="swiper__arrow">
-                            <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
-                        </div>
-                    </button>
-                    <button class="swiper-slide">
-                        <img class="swiper__img" src="./Images/acer.svg" alt="Acer">
-                        <div class="swiper__arrow">
-                            <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
-                        </div>
-                    </button>
-                    <button class="swiper-slide swiper__hidden equipment-types__swiper__hidden">
-                        <img class="swiper__img" src="./Images/sony.svg" alt="Sony">
-                        <div class="swiper__arrow">
-                            <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
-                        </div>
-                    </button>
-                    <button class="swiper-slide swiper__hidden equipment-types__swiper__hidden">
-                        <img class="swiper__img" src="./Images/lenovo.svg" alt="Lenovo">
-                        <div class="swiper__arrow">
-                            <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
-                        </div>
-                    </button>
-                    <button class="swiper-slide swiper__hidden equipment-types__swiper__hidden">
-                        <img class="swiper__img" src="./Images/samsung.svg" alt="Samsung">
-                        <div class="swiper__arrow">
-                            <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
-                        </div>
-                    </button>
-                    <button class="swiper-slide swiper__hidden equipment-types__swiper__hidden">
-                        <img class="swiper__img" src="./Images/apple.svg" alt="Apple">
-                        <div class="swiper__arrow">
-                            <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
-                        </div>
-                    </button>
-                </div>
-                <div class="swiper-pagination"></div>
-                <button class="swiper__expand equipment-types__swiper__expand">
-                    <img class="equipment-types__swiper__expand__arrow" src="./Images/arrow.svg" alt="Стрелка">
-                    <span class="swiper__expand__text equipment-types__swiper__expand__text">Показать все</span>
-                </button>
-            </div>
-        </section>
-
-        <section class="appliances-types">
-            <h2 class="subtitle">РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</h2>
-            <div class="swiper swiper2">
-                <div class="swiper-wrapper">
-                    <button class="swiper-slide">
-                        <p class="swiper__text">Ремонт ноутбуков</p>
-                        <div class="swiper__arrow">
-                            <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
-                        </div>
-                    </button>
-                    <button class="swiper-slide">
-                        <p class="swiper__text">Ремонт планшетов</p>
-                        <div class="swiper__arrow">
-                            <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
-                        </div>
-                    </button>
-                    <button class="swiper-slide">
-                        <p class="swiper__text">Ремонт ПК</p>
-                        <div class="swiper__arrow">
-                            <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
-                        </div>
-                    </button>
-                    <button class="swiper-slide slide__hidden">
-                        <p class="swiper__text">Ремонт мониторов</p>
-                        <div class="swiper__arrow">
-                            <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
-                        </div>
-                    </button>
-                </div>
-                <div class="swiper-pagination"></div>
-                <button class="swiper__expand appliances-types__swiper__expand">
-                    <img class="appliances-types__swiper__expand__arrow" src="./Images/arrow.svg" alt="Стрелка">
-                    <span class="swiper__expand__text appliances-types__swiper__expand__text">Показать все</span>
-                </button>
-            </div>
-        </section>
-
-        <section class="price">
-            <h2 class="subtitle">ЦЕНЫ НА УСЛУГИ</h2>
-            <div class="prices">
-                <div class="price__head">
-                    <p>Ремонтные услуги</p>
-                    <p>Цена</p>
-                    <p>Срок</p>
-                </div>
-                <div class="price__row">
-                    <p>Диагностика</p>
-                    <p>Бесплатно</p>
-                    <p>30 мин</p>
-                    <button class="order__service">
-                        <p>ЗАКАЗАТЬ</p>
-                        <img src="./Images/arrow_white_right.svg" alt="Стрелка">
-                    </button>
-                </div>
-                <div class="price__line"></div>
-                <div class="price__row">
-                    <p>Замена дисплея</p>
-                    <p>1 000 ₽</p>
-                    <p>30-120 мин</p>
-                    <button class="order__service">
-                        <p>ЗАКАЗАТЬ</p>
-                        <img src="./Images/arrow_white_right.svg" alt="Стрелка">
-                    </button>
-                </div>
-                <div class="price__line"></div>
-                <div class="price__row">
-                    <p>Замена полифонического динамика</p>
-                    <p>1 000 ₽</p>
-                    <p>30-120 мин</p>
-                    <button class="order__service">
-                        <p>ЗАКАЗАТЬ</p>
-                        <img src="./Images/arrow_white_right.svg" alt="Стрелка">
-                    </button>
-                </div>
-                <div class="price__line"></div>
-                <div class="price__row">
-                    <p>Тестирование с выдачей технического заключения</p>
-                    <p>1 000 ₽</p>
-                    <p>30-120 мин</p>
-                    <button class="order__service">
-                        <p>ЗАКАЗАТЬ</p>
-                        <img src="./Images/arrow_white_right.svg" alt="Стрелка">
-                    </button>
-                </div>
-                <div class="price__line"></div>
-                <div class="price__row">
-                    <p>Замена программного обеспечения</p>
-                    <p>1 000 ₽</p>
-                    <p>30-120 мин</p>
-                    <button class="order__service">
-                        <p>ЗАКАЗАТЬ</p>
-                        <img src="./Images/arrow_white_right.svg" alt="Стрелка">
-                    </button>
-                </div>
-            </div>
-
-            <div class="swiper swiper3">
-                <div class="swiper-wrapper">
-                    <div class="price__slider swiper-slide">
-                        <p><span>Ремонтные услуги</span><br>Диагностика</p>
-                        <p><span>Цена</span><br>Бесплатно</p>
-                        <div>
-                            <p><span>Срок</span><br>30 мин</p>
-                            <button class="order__service">
-                                <p>ЗАКАЗАТЬ</p>
-                                <img src="./Images/arrow_white_right.svg" alt="Стрелка">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="price__slider swiper-slide">
-                        <p><span>Ремонтные услуги</span><br>Замена дисплея</p>
-                        <p><span>Цена</span><br>1 000 ₽</p>
-                        <div>
-                            <p><span>Срок</span><br>30-120 мин</p>
-                            <button class="order__service">
-                                <p>ЗАКАЗАТЬ</p>
-                                <img src="./Images/arrow_white_right.svg" alt="Стрелка">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="price__slider swiper-slide">
-                        <p><span>Ремонтные услуги</span><br>Замена полифонического динамика</p>
-                        <p><span>Цена</span><br>1 000 ₽</p>
-                        <div>
-                            <p><span>Срок</span><br>30-120 мин</p>
-                            <button class="order__service">
-                                <p>ЗАКАЗАТЬ</p>
-                                <img src="./Images/arrow_white_right.svg" alt="Стрелка">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="price__slider swiper-slide">
-                        <p><span>Ремонтные услуги</span><br>Тестирование с выдачей технического заключения</p>
-                        <p><span>Цена</span><br>1 000 ₽</p>
-                        <div>
-                            <p><span>Срок</span><br>30-120 мин</p>
-                            <button class="order__service">
-                                <p>ЗАКАЗАТЬ</p>
-                                <img src="./Images/arrow_white_right.svg" alt="Стрелка">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="price__slider swiper-slide">
-                        <p><span>Ремонтные услуги</span><br>Замена программного обеспечения</p>
-                        <p><span>Цена</span><br>1 000 ₽</p>
-                        <div>
-                            <p><span>Срок</span><br>30-120 мин</p>
-                            <button class="order__service">
-                                <p>ЗАКАЗАТЬ</p>
-                                <img src="./Images/arrow_white_right.svg" alt="Стрелка">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </section>
-
-        <article class="article__price">
-            <p>Все цены указаны с учетом НДС. Стоимость ремонта указана
-                <br> на единичную услугу. Для получения коммерческого
-                <br>предложения на постоянное обслуживание, оставьте заявку.</p>
-        </article>
-        <p class="link">Получить коммерческое предложение <img src="./Images/arrow_right.svg" alt="Стрелка"></p>
-        <div class="footer__line"></div>
-        <footer class="footer">
-            <p>© 2019 CPS
-                <br>Разработано командой Apesong </p>
-            <p>Политика конфиденциальности</p>
-            <p>Информация, размещенная на данной странице, не является публичной офертой</p>
-        </footer>
-    </div>
-
-    <div class="feedback">
-        <button id="feedback-close" class="button__icon">
-            <img id="feedback_img-close" class="feedback__img" src="./Images/close.svg" alt="close">
-        </button>
-        <p class="feedback__content__name">Обратная связь</p>
-        <div class="feedback__content">
-            <input type="text" class="feedback__content__input" placeholder="Имя">
-            <input type="number" class="feedback__content__input" placeholder="Телефон">
-            <input type="email" class="feedback__content__input" placeholder="Электронная почта">
-            <textarea class="feedback__content__textarea" placeholder="Сообщение"></textarea>
         </div>
-        <div class="feedback__footer">
-            <div class="feedback__footer__text">
-                Нажимая “отправить”, вы даете согласие на <a>обработку персональных данных</a> и соглашаетесь с нашей <a>политикой конфиденциальности</a>
-            </div>
-            <button class="feedback__footer__button">
-                <p>Отправить</p>
-                <img src="./Images/arrow_white_right.svg" alt="Стрелка">
+
+        <div class="back"></div>
+
+        <div class="content">
+            <header class="header">
+                <div class="main">
+                    <div>
+                        <h1 class="title">Услуги и сервисы</h1>
+                        <button id="menu-open" class="button__icon">
+                            <img id="menu_img-open" class="header__img" src="./Images/menu.svg" alt="menu">
+                        </button>
+                        <div class="header__line"></div>
+                        <div class="header__cps">
+                            <img class="header__img" src="./Images/logo.svg" alt="CPS">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="header__contacts">
+                            <button class="button__icon call-open">
+                                <img class="header__img call-open" src="./Images/phone.svg" alt="phone">
+                            </button>
+                            <button class="button__icon feedback-open">
+                                <img class="header__img feedback-open" src="./Images/email.svg" alt="email">
+                            </button>
+                            <button class="button__icon">
+                                <img class="header__img" src="./Images/cabinet.svg" alt="cabinet"> 
+                            </button>
+                        </div>
+                        <div class="header__line"></div>
+                        <div class="header__services">
+                            <div class="header__service">
+                                <p class="header__text">Оставить заявку</p>
+                                <button class="button__icon">
+                                    <img class="header__img" src="./Images/service.svg" alt="Оставить заявку">
+                                </button>
+                            </div>
+                            <div class="header__service">
+                                <p class="header__text">Статус ремонта</p>
+                                <button class="button__icon">
+                                    <img class="header__img" src="./Images/status.svg" alt="Статус ремонта">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <p class="title">Услуги и сервисы</p>
+                    <div>
+                        <button class="menu__item item_active">Ремонтируемые бренды</button>
+                        <button class="menu__item">Ремонтируемые устройства</button>
+                        <button class="menu__item">Цены на услуги</button>
+                        <button class="menu__item">Адреса сервисных центров</button>
+                        <button class="menu__item">Специальные цены</button>
+                        <button class="menu__item">Отзывы</button>
+                    </div>
+                </div>
+            </header>
+
+            <section class="info">
+                <div class="info__text">
+                    <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                    <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+                    <button class="info__expand">
+                        <img class="expand__arrow" src="./Images/arrow.svg" alt="Стрелка">
+                        <span class="expand__text">Читать далее</span>
+                    </button>
+                </div>
+                <img class="info__img" src="./Images/logo.png" alt="CPS">
+            </section>
+
+            <section class="equipment-types">
+                <h2 class="subtitle">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h2>
+                <div class="swiper swiper1">
+                    <div class="swiper-wrapper equipment-types__swiper-wrapper">
+                        <button class="swiper-slide">
+                            <img class="swiper__img" src="./Images/lenovo.svg" alt="Lenovo">
+                            <div class="swiper__arrow">
+                                <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
+                            </div>
+                        </button>
+                        <button class="swiper-slide">
+                            <img class="swiper__img" src="./Images/samsung.svg" alt="Samsung">
+                            <div class="swiper__arrow">
+                                <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
+                            </div>
+                        </button>
+                        <button class="swiper-slide">
+                            <img class="swiper__img" src="./Images/apple.svg" alt="Apple">
+                            <div class="swiper__arrow">
+                                <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
+                            </div>
+                        </button>
+                        <button class="swiper-slide swiper__hidden equipment-types__swiper__hidden">
+                            <img class="swiper__img" src="./Images/viewsonic.svg" alt="ViewSonic">
+                            <div class="swiper__arrow">
+                                <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
+                            </div>
+                        </button>
+                        <button class="swiper-slide">
+                            <img class="swiper__img" src="./Images/bosch.svg" alt="Bosch">
+                            <div class="swiper__arrow">
+                                <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
+                            </div>
+                        </button>
+                        <button class="swiper-slide">
+                            <img class="swiper__img" src="./Images/hp.svg" alt="HP">
+                            <div class="swiper__arrow">
+                                <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
+                            </div>
+                        </button>
+                        <button class="swiper-slide">
+                            <img class="swiper__img" src="./Images/acer.svg" alt="Acer">
+                            <div class="swiper__arrow">
+                                <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
+                            </div>
+                        </button>
+                        <button class="swiper-slide swiper__hidden equipment-types__swiper__hidden">
+                            <img class="swiper__img" src="./Images/sony.svg" alt="Sony">
+                            <div class="swiper__arrow">
+                                <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
+                            </div>
+                        </button>
+                        <button class="swiper-slide swiper__hidden equipment-types__swiper__hidden">
+                            <img class="swiper__img" src="./Images/lenovo.svg" alt="Lenovo">
+                            <div class="swiper__arrow">
+                                <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
+                            </div>
+                        </button>
+                        <button class="swiper-slide swiper__hidden equipment-types__swiper__hidden">
+                            <img class="swiper__img" src="./Images/samsung.svg" alt="Samsung">
+                            <div class="swiper__arrow">
+                                <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
+                            </div>
+                        </button>
+                        <button class="swiper-slide swiper__hidden equipment-types__swiper__hidden">
+                            <img class="swiper__img" src="./Images/apple.svg" alt="Apple">
+                            <div class="swiper__arrow">
+                                <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
+                            </div>
+                        </button>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper swiper__decktop">
+                    <div class="swiper-wrapper equipment-types__swiper-wrapper">
+                        <button class="swiper-slide">
+                            <img class="swiper__img" src="./Images/lenovo.svg" alt="Lenovo">
+                            <div class="swiper__arrow">
+                                <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
+                            </div>
+                        </button>
+                        <button class="swiper-slide">
+                            <img class="swiper__img" src="./Images/samsung.svg" alt="Samsung">
+                            <div class="swiper__arrow">
+                                <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
+                            </div>
+                        </button>
+                        <button class="swiper-slide">
+                            <img class="swiper__img" src="./Images/apple.svg" alt="Apple">
+                            <div class="swiper__arrow">
+                                <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
+                            </div>
+                        </button>
+                        <button class="swiper-slide swiper__hidden equipment-types__swiper__hidden">
+                            <img class="swiper__img" src="./Images/viewsonic.svg" alt="ViewSonic">
+                            <div class="swiper__arrow">
+                                <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
+                            </div>
+                        </button>
+                        <button class="swiper-slide">
+                            <img class="swiper__img" src="./Images/bosch.svg" alt="Bosch">
+                            <div class="swiper__arrow">
+                                <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
+                            </div>
+                        </button>
+                        <button class="swiper-slide">
+                            <img class="swiper__img" src="./Images/hp.svg" alt="HP">
+                            <div class="swiper__arrow">
+                                <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
+                            </div>
+                        </button>
+                        <button class="swiper-slide">
+                            <img class="swiper__img" src="./Images/acer.svg" alt="Acer">
+                            <div class="swiper__arrow">
+                                <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
+                            </div>
+                        </button>
+                        <button class="swiper-slide swiper__hidden equipment-types__swiper__hidden">
+                            <img class="swiper__img" src="./Images/sony.svg" alt="Sony">
+                            <div class="swiper__arrow">
+                                <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
+                            </div>
+                        </button>
+                        <button class="swiper-slide swiper__hidden equipment-types__swiper__hidden">
+                            <img class="swiper__img" src="./Images/lenovo.svg" alt="Lenovo">
+                            <div class="swiper__arrow">
+                                <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
+                            </div>
+                        </button>
+                        <button class="swiper-slide swiper__hidden equipment-types__swiper__hidden">
+                            <img class="swiper__img" src="./Images/samsung.svg" alt="Samsung">
+                            <div class="swiper__arrow">
+                                <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
+                            </div>
+                        </button>
+                        <button class="swiper-slide swiper__hidden equipment-types__swiper__hidden">
+                            <img class="swiper__img" src="./Images/apple.svg" alt="Apple">
+                            <div class="swiper__arrow">
+                                <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
+                            </div>
+                        </button>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <button class="swiper__expand equipment-types__swiper__expand">
+                        <img class="equipment-types__swiper__expand__arrow" src="./Images/arrow.svg" alt="Стрелка">
+                        <span class="swiper__expand__text equipment-types__swiper__expand__text">Показать все</span>
+                    </button>
+                </div>
+            </section>
+
+            <section class="appliances-types">
+                <h2 class="subtitle">РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</h2>
+                <div class="swiper swiper2">
+                    <div class="swiper-wrapper">
+                        <button class="swiper-slide">
+                            <p class="swiper__text">Ремонт ноутбуков</p>
+                            <div class="swiper__arrow">
+                                <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
+                            </div>
+                        </button>
+                        <button class="swiper-slide">
+                            <p class="swiper__text">Ремонт планшетов</p>
+                            <div class="swiper__arrow">
+                                <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
+                            </div>
+                        </button>
+                        <button class="swiper-slide">
+                            <p class="swiper__text">Ремонт ПК</p>
+                            <div class="swiper__arrow">
+                                <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
+                            </div>
+                        </button>
+                        <button class="swiper-slide slide__hidden">
+                            <p class="swiper__text">Ремонт мониторов</p>
+                            <div class="swiper__arrow">
+                                <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
+                            </div>
+                        </button>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper swiper__decktop">
+                    <div class="swiper-wrapper">
+                        <button class="swiper-slide">
+                            <p class="swiper__text">Ремонт ноутбуков</p>
+                            <div class="swiper__arrow">
+                                <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
+                            </div>
+                        </button>
+                        <button class="swiper-slide">
+                            <p class="swiper__text">Ремонт планшетов</p>
+                            <div class="swiper__arrow">
+                                <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
+                            </div>
+                        </button>
+                        <button class="swiper-slide">
+                            <p class="swiper__text">Ремонт ПК</p>
+                            <div class="swiper__arrow">
+                                <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
+                            </div>
+                        </button>
+                        <button class="swiper-slide slide__hidden">
+                            <p class="swiper__text">Ремонт мониторов</p>
+                            <div class="swiper__arrow">
+                                <img class="swiper__arrow__img" src="./Images/arrow_right.svg" alt="arrow">
+                            </div>
+                        </button>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <button class="swiper__expand appliances-types__swiper__expand">
+                        <img class="appliances-types__swiper__expand__arrow" src="./Images/arrow.svg" alt="Стрелка">
+                        <span class="swiper__expand__text appliances-types__swiper__expand__text">Показать все</span>
+                    </button>
+                </div>
+            </section>
+
+            <section class="price">
+                <h2 class="subtitle">ЦЕНЫ НА УСЛУГИ</h2>
+                <div class="prices">
+                    <div class="price__head">
+                        <p>Ремонтные услуги</p>
+                        <p>Цена</p>
+                        <p>Срок</p>
+                    </div>
+                    <div class="price__row">
+                        <p>Диагностика</p>
+                        <p>Бесплатно</p>
+                        <p>30 мин</p>
+                        <button class="order__service">
+                            <p>ЗАКАЗАТЬ</p>
+                            <img src="./Images/arrow_white_right.svg" alt="Стрелка">
+                        </button>
+                    </div>
+                    <div class="price__line"></div>
+                    <div class="price__row">
+                        <p>Замена дисплея</p>
+                        <p>1 000 ₽</p>
+                        <p>30-120 мин</p>
+                        <button class="order__service">
+                            <p>ЗАКАЗАТЬ</p>
+                            <img src="./Images/arrow_white_right.svg" alt="Стрелка">
+                        </button>
+                    </div>
+                    <div class="price__line"></div>
+                    <div class="price__row">
+                        <p>Замена полифонического динамика</p>
+                        <p>1 000 ₽</p>
+                        <p>30-120 мин</p>
+                        <button class="order__service">
+                            <p>ЗАКАЗАТЬ</p>
+                            <img src="./Images/arrow_white_right.svg" alt="Стрелка">
+                        </button>
+                    </div>
+                    <div class="price__line"></div>
+                    <div class="price__row">
+                        <p>Тестирование с выдачей технического заключения</p>
+                        <p>1 000 ₽</p>
+                        <p>30-120 мин</p>
+                        <button class="order__service">
+                            <p>ЗАКАЗАТЬ</p>
+                            <img src="./Images/arrow_white_right.svg" alt="Стрелка">
+                        </button>
+                    </div>
+                    <div class="price__line"></div>
+                    <div class="price__row">
+                        <p>Замена программного обеспечения</p>
+                        <p>1 000 ₽</p>
+                        <p>30-120 мин</p>
+                        <button class="order__service">
+                            <p>ЗАКАЗАТЬ</p>
+                            <img src="./Images/arrow_white_right.svg" alt="Стрелка">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="swiper swiper3">
+                    <div class="swiper-wrapper">
+                        <div class="price__slider swiper-slide">
+                            <p><span>Ремонтные услуги</span><br>Диагностика</p>
+                            <p><span>Цена</span><br>Бесплатно</p>
+                            <div>
+                                <p><span>Срок</span><br>30 мин</p>
+                                <button class="order__service">
+                                    <p>ЗАКАЗАТЬ</p>
+                                    <img src="./Images/arrow_white_right.svg" alt="Стрелка">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="price__slider swiper-slide">
+                            <p><span>Ремонтные услуги</span><br>Замена дисплея</p>
+                            <p><span>Цена</span><br>1 000 ₽</p>
+                            <div>
+                                <p><span>Срок</span><br>30-120 мин</p>
+                                <button class="order__service">
+                                    <p>ЗАКАЗАТЬ</p>
+                                    <img src="./Images/arrow_white_right.svg" alt="Стрелка">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="price__slider swiper-slide">
+                            <p><span>Ремонтные услуги</span><br>Замена полифонического динамика</p>
+                            <p><span>Цена</span><br>1 000 ₽</p>
+                            <div>
+                                <p><span>Срок</span><br>30-120 мин</p>
+                                <button class="order__service">
+                                    <p>ЗАКАЗАТЬ</p>
+                                    <img src="./Images/arrow_white_right.svg" alt="Стрелка">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="price__slider swiper-slide">
+                            <p><span>Ремонтные услуги</span><br>Тестирование с выдачей технического заключения</p>
+                            <p><span>Цена</span><br>1 000 ₽</p>
+                            <div>
+                                <p><span>Срок</span><br>30-120 мин</p>
+                                <button class="order__service">
+                                    <p>ЗАКАЗАТЬ</p>
+                                    <img src="./Images/arrow_white_right.svg" alt="Стрелка">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="price__slider swiper-slide">
+                            <p><span>Ремонтные услуги</span><br>Замена программного обеспечения</p>
+                            <p><span>Цена</span><br>1 000 ₽</p>
+                            <div>
+                                <p><span>Срок</span><br>30-120 мин</p>
+                                <button class="order__service">
+                                    <p>ЗАКАЗАТЬ</p>
+                                    <img src="./Images/arrow_white_right.svg" alt="Стрелка">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <article class="article__price">
+                <p>Все цены указаны с учетом НДС. Стоимость ремонта указана
+                    <br> на единичную услугу. Для получения коммерческого
+                    <br>предложения на постоянное обслуживание, оставьте заявку.</p>
+            </article>
+            <p class="link">Получить коммерческое предложение <img src="./Images/arrow_right.svg" alt="Стрелка"></p>
+            <div class="footer__line"></div>
+            <footer class="footer">
+                <p>© 2019 CPS
+                    <br>Разработано командой Apesong </p>
+                <p>Политика конфиденциальности</p>
+                <p>Информация, размещенная на данной странице, не является публичной офертой</p>
+            </footer>
+        </div>
+
+        <div class="feedback">
+            <button id="feedback-close" class="button__icon">
+                <img id="feedback_img-close" class="feedback__img" src="./Images/close.svg" alt="close">
             </button>
+            <p class="feedback__name">Обратная связь</p>
+            <div class="feedback__content">
+                <input type="text" class="feedback__content__input" placeholder="Имя">
+                <input type="number" class="feedback__content__input" placeholder="Телефон">
+                <input type="email" class="feedback__content__input" placeholder="Электронная почта">
+                <textarea class="feedback__content__textarea" placeholder="Сообщение"></textarea>
+            </div>
+            <div class="feedback__footer">
+                <div class="feedback__footer__text">
+                    Нажимая “отправить”, вы даете согласие на <a>обработку персональных данных</a> и соглашаетесь с нашей <a>политикой конфиденциальности</a>
+                </div>
+                <button class="feedback__footer__button">
+                    <p>Отправить</p>
+                    <img src="./Images/arrow_white_right.svg" alt="Стрелка">
+                </button>
+            </div>
+        </div>
+
+        <div class="call">
+            <button id="call-close" class="button__icon">
+                <img id="call_img-close" class="call__img" src="./Images/close.svg" alt="close">
+            </button>
+            <p class="call__name">Заказать звонок</p>
+            <div class="call__content">
+                <input type="number" class="call__content__input" placeholder="Телефон">
+            </div>
+            <div class="call__footer">
+                <div class="call__footer__text">
+                    Нажимая “отправить”, вы даете согласие на <a>обработку персональных данных</a> и соглашаетесь с нашей <a>политикой конфиденциальности</a>
+                </div>
+                <button class="call__footer__button">
+                    <p>Отправить</p>
+                    <img src="./Images/arrow_white_right.svg" alt="Стрелка">
+                </button>
+            </div>
         </div>
     </div>
 

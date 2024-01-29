@@ -27,11 +27,29 @@ document.addEventListener('click', function(el) {
         feedback.classList.add('feedback__active');
         let back = document.querySelector('.back');
         back.classList.add('back__active');
+        let menuMobile = document.querySelector('.menu-mobile');
+        menuMobile.classList.remove('menu-active');
     }
 
     if ( el.target.id == 'feedback-close' || el.target.id == 'feedback_img-close' ) {
         let menuMobile = document.querySelector('.feedback');
         menuMobile.classList.remove('feedback__active');
+        let back = document.querySelector('.back');
+        back.classList.remove('back__active');
+    }
+
+    if ( el.target.classList.contains('call-open') ) { 
+        let call = document.querySelector('.call');
+        call.classList.add('call__active');
+        let back = document.querySelector('.back');
+        back.classList.add('back__active');
+        let menuMobile = document.querySelector('.menu-mobile');
+        menuMobile.classList.remove('menu-active');
+    }
+
+    if ( el.target.id == 'call-close' || el.target.id == 'call_img-close' ) {
+        let menuMobile = document.querySelector('.call');
+        menuMobile.classList.remove('call__active');
         let back = document.querySelector('.back');
         back.classList.remove('back__active');
     }
@@ -108,33 +126,50 @@ document.addEventListener('click', function(el) {
 let swiper = undefined;
 let swiper2 = undefined;
 let swiper3 = undefined;
+
+swiper = new Swiper('.swiper1', {
+    loop: true,
+    mousewheel: true,
+    keyboard: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+});
+swiper2 = new Swiper('.swiper2', {
+    loop: true,
+    mousewheel: true,
+    keyboard: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+});
+swiper3 = new Swiper('.swiper3', {
+    loop: true,
+    mousewheel: true,
+    keyboard: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+});
+
 addEventListener('resize', function() {
     if ( window.innerWidth <= 768 ) {
-        swiper = new Swiper('.swiper1', {
-            mousewheel: true,
-            keyboard: true,
-            pagination: {
-              el: '.swiper-pagination',
-              clickable: true,
-            },
-        });
-        swiper2 = new Swiper('.swiper2', {
-            mousewheel: true,
-            keyboard: true,
-            pagination: {
-              el: '.swiper-pagination',
-            },
-        });
-        swiper3 = new Swiper('.swiper3', {
-            mousewheel: true,
-            keyboard: true,
-            pagination: {
-              el: '.swiper-pagination',
-            },
-        });
-    } else {
-        swiper.destroy();
-        swiper = undefined;
-        document.querySelector('.swiper-pagination').innerHTML = '';
+        document.querySelectorAll('.swiper').forEach( function(el) {
+            el.style.display = 'block';
+        })
+        document.querySelectorAll('.swiper__decktop').forEach( function(el) {
+            el.style.display = 'none';
+        })
+    } 
+    if ( window.innerWidth > 768 ) {
+        document.querySelectorAll('.swiper').forEach( function(el) {
+            el.style.display = 'none';
+        })
+        document.querySelectorAll('.swiper__decktop').forEach( function(el) {
+            el.style.display = 'block';
+        })
     }
 })
