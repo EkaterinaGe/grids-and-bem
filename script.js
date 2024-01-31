@@ -128,7 +128,7 @@ let swiper2 = undefined;
 let swiper3 = undefined;
 
 swiper = new Swiper('.swiper1', {
-    loop: true,
+    slidesPerView: "auto",
     mousewheel: true,
     keyboard: true,
     pagination: {
@@ -137,7 +137,7 @@ swiper = new Swiper('.swiper1', {
     },
 });
 swiper2 = new Swiper('.swiper2', {
-    loop: true,
+    slidesPerView: "auto",
     mousewheel: true,
     keyboard: true,
     pagination: {
@@ -146,7 +146,7 @@ swiper2 = new Swiper('.swiper2', {
     },
 });
 swiper3 = new Swiper('.swiper3', {
-    loop: true,
+    slidesPerView: "auto",
     mousewheel: true,
     keyboard: true,
     pagination: {
@@ -169,7 +169,7 @@ addEventListener('resize', function() {
             el.style.display = 'none';
         })
         document.querySelectorAll('.swiper__decktop').forEach( function(el) {
-            el.style.display = 'block';
+            el.style.display = 'flex';
         })
     }
 })
