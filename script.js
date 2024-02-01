@@ -129,7 +129,10 @@ let swiper3 = undefined;
 
 swiper = new Swiper('.swiper1', {
     slidesPerView: "auto",
+    freeMode: true,
     mousewheel: true,
+    observer: true,
+    observeParents: true,
     keyboard: true,
     pagination: {
       el: '.swiper-pagination',
@@ -138,6 +141,9 @@ swiper = new Swiper('.swiper1', {
 });
 swiper2 = new Swiper('.swiper2', {
     slidesPerView: "auto",
+    freeMode: true,
+    observer: true,
+    observeParents: true,
     mousewheel: true,
     keyboard: true,
     pagination: {
@@ -147,6 +153,9 @@ swiper2 = new Swiper('.swiper2', {
 });
 swiper3 = new Swiper('.swiper3', {
     slidesPerView: "auto",
+    freeMode: true,
+    observer: true,
+    observeParents: true,
     mousewheel: true,
     keyboard: true,
     pagination: {
